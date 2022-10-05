@@ -14,6 +14,7 @@ interface MDXPost {
 }
 
 const PostPage = ({ post }: { post: MDXPost }) => {
+  const components = { h2: (props: any) => <h3>bruh</h3> };
   return (
     <>
       <Head>
@@ -23,7 +24,7 @@ const PostPage = ({ post }: { post: MDXPost }) => {
         <Link href='/'>Alabhya Jindal</Link>
       </h1>
       <h1>{post.meta.title}</h1>
-      <MDXRemote {...post.source} />
+      <MDXRemote {...post.source} components={components} />
     </>
   );
 };

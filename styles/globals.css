@@ -1,7 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  color: #111;
 }
 
 html,
@@ -18,20 +17,26 @@ a {
 }
 
 .home {
+  margin-top: 0;
   margin-bottom: 3rem;
   font-size: 3rem;
 }
 
 .articles-list {
   list-style-type: none;
+  padding: 0;
 }
 
 .articles-cont {
   margin-bottom: 1.5rem;
 }
 
+.article-title {
+  margin-bottom: 0;
+}
+
 .article-excerpt {
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .article-date {
