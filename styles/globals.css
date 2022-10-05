@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  max-width: 50rem;
+  margin: 0 auto;
 }
 
 a {
@@ -11,16 +17,24 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.home {
+  margin-bottom: 3rem;
+  font-size: 3rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.articles-list {
+  list-style-type: none;
+}
+
+.articles-cont {
+  margin-bottom: 1.5rem;
+}
+
+.article-excerpt {
+  margin-bottom: 0.5rem;
+}
+
+.article-date {
+  opacity: 0.7;
+  font-size: smaller;
 }
